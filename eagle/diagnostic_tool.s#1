@@ -12192,7 +12192,7 @@ Source: www.kingbright.com</description>
 <part name="FRAME1" library="frames" deviceset="DINA4_L" device=""/>
 <part name="U$1" library="eurosource_microchip_opamp" deviceset="MCP6001" device=""/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
-<part name="P+1" library="supply1" deviceset="+5V" device=""/>
+<part name="P+1" library="supply1" deviceset="+5V" device="" value="+6V"/>
 <part name="C1" library="rcl" deviceset="CPOL-EU" device="E2.5-5" value="1 uF"/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="R1" library="rcl" deviceset="R-EU_" device="0207/10" value="1M"/>
@@ -12202,12 +12202,14 @@ Source: www.kingbright.com</description>
 <part name="T1" library="opto-trans-siemens" deviceset="BP103" device="" value="PT204-6C"/>
 <part name="SENSOR1" library="wirepad" deviceset="WIREPAD" device="1,6/0,8" value=""/>
 <part name="SENSOR2" library="wirepad" deviceset="WIREPAD" device="1,6/0,8" value=""/>
-<part name="SG1" library="buzzer" deviceset="B/C11L" device=""/>
+<part name="SG1" library="buzzer" deviceset="B/C11L" device="" value="F/DGX-05P"/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
+<text x="99.06" y="142.24" size="1.778" layer="91">Battery (4 * AA/AAA)</text>
+<text x="132.08" y="111.76" size="1.778" layer="91">Elfa 137-66-335</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="-2.54" y="0"/>
@@ -12216,11 +12218,11 @@ Source: www.kingbright.com</description>
 <instance part="GND1" gate="1" x="93.98" y="96.52"/>
 <instance part="P+1" gate="1" x="93.98" y="142.24"/>
 <instance part="C1" gate="G$1" x="73.66" y="121.92"/>
-<instance part="GND2" gate="1" x="73.66" y="114.3"/>
+<instance part="GND2" gate="1" x="73.66" y="111.76"/>
 <instance part="R1" gate="G$1" x="58.42" y="119.38" rot="R90"/>
 <instance part="R2" gate="G$1" x="114.3" y="127" rot="R90"/>
 <instance part="LED1" gate="G$1" x="114.3" y="116.84"/>
-<instance part="GND3" gate="1" x="55.88" y="93.98"/>
+<instance part="GND3" gate="1" x="48.26" y="88.9"/>
 <instance part="T1" gate="1" x="27.94" y="101.6"/>
 <instance part="SENSOR1" gate="G$1" x="45.72" y="106.68"/>
 <instance part="SENSOR2" gate="G$1" x="45.72" y="96.52"/>
@@ -12239,10 +12241,11 @@ Source: www.kingbright.com</description>
 <segment>
 <pinref part="C1" gate="G$1" pin="-"/>
 <pinref part="GND2" gate="1" pin="GND"/>
+<wire x1="73.66" y1="114.3" x2="73.66" y2="116.84" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND3" gate="1" pin="GND"/>
-<wire x1="55.88" y1="96.52" x2="48.26" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="91.44" x2="48.26" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="SENSOR2" gate="G$1" pin="P"/>
 </segment>
 <segment>

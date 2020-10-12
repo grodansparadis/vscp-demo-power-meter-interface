@@ -10642,10 +10642,20 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <part name="X14" library="wirepad" deviceset="WIREPAD" device="1,6/0,8" value=""/>
 <part name="X15" library="wirepad" deviceset="WIREPAD" device="1,6/0,8" value=""/>
 <part name="X16" library="wirepad" deviceset="WIREPAD" device="1,6/0,8" value=""/>
+<part name="X0" library="wirepad" deviceset="WIREPAD" device="1,6/0,8" value=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
+<text x="228.6" y="114.3" size="1.778" layer="91">To Accra input 1 - CNT1</text>
+<text x="228.6" y="109.22" size="1.778" layer="91">To Accra input 2 (GND)</text>
+<text x="228.6" y="99.06" size="1.778" layer="91">To Accra input 4 - CNT2</text>
+<text x="228.6" y="93.98" size="1.778" layer="91">To Accra input 5 (GND)</text>
+<text x="228.6" y="83.82" size="1.778" layer="91">To Accra input 7 - CNT3</text>
+<text x="228.6" y="78.74" size="1.778" layer="91">To Accra input 8 (GND)</text>
+<text x="228.6" y="63.5" size="1.778" layer="91">To Accra input 10 - CNT4</text>
+<text x="228.6" y="58.42" size="1.778" layer="91">To Accra input 11 (GND)</text>
+<text x="228.6" y="134.62" size="1.778" layer="91">To Accra input 12 (3/6/9)</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="-2.54" y="0"/>
@@ -10692,6 +10702,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <instance part="X14" gate="G$1" x="226.06" y="78.74" rot="R180"/>
 <instance part="X15" gate="G$1" x="226.06" y="63.5" rot="R180"/>
 <instance part="X16" gate="G$1" x="226.06" y="58.42" rot="R180"/>
+<instance part="X0" gate="G$1" x="226.06" y="134.62" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -10889,6 +10900,8 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <pinref part="R4" gate="G$1" pin="2"/>
 <wire x1="149.86" y1="132.08" x2="149.86" y2="134.62" width="0.1524" layer="91"/>
 <junction x="149.86" y="134.62"/>
+<wire x1="165.1" y1="134.62" x2="223.52" y2="134.62" width="0.1524" layer="91"/>
+<pinref part="X0" gate="G$1" pin="P"/>
 </segment>
 </net>
 </nets>
